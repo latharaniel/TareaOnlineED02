@@ -13,6 +13,9 @@ public class Saluda {
 		System.out.println ("Por favor, introduce tu nombre");
 		nombre = sc.nextLine();
 		System.out.println ("Buenos días: "+ nombre);
+		System.out.println ("Por favor, introduce tu nombre");
+		nombre = sc.nextLine();
+		System.out.println ("Buenos días: "+ nombre);
 	}
 
 }
