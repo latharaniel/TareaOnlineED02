@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Saluda {
-
+	static String nombre = null;
 	public Saluda () {
 		
 		
@@ -16,6 +16,14 @@ public class Saluda {
 		System.out.println ("Por favor, introduce tu nombre");
 		nombre = sc.nextLine();
 		System.out.println ("Buenos días: "+ nombre);
+		
+		
+	}
+	public static String getNombre() {
+		return nombre;
+	}
+	public static void setNombre(String nombre) {
+		Saluda.nombre = nombre;
 	}
 
 }
