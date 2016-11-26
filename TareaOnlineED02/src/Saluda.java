@@ -1,12 +1,10 @@
 import java.util.Scanner;
 public class Saluda {
 	static String nombre = null;
+	private Scanner sc;
 	public Saluda () {
-		
-		
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner (System.in);
 		String nombre;
@@ -19,6 +17,18 @@ public class Saluda {
 		
 		
 	}
+	
+	public String pideNombre(String nombre){
+		
+		sc = new Scanner (System.in);
+		System.out.println ("Por favor, introduce tu nombre");
+		nombre = sc.nextLine();
+		System.out.println ("Buenos días: "+ nombre);
+		return nombre;
+		
+		
+	}
+	
 	public static String getNombre() {
 		return nombre;
 	}
